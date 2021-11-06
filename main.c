@@ -7,7 +7,7 @@ int main(){
     // printf("Enter the first number: ");
     scanf(" %d", &x);
     // printf("Enter the second number: ");
-    // scanf(" %d", &y);
+    scanf(" %d", &y);
     
     if(x > y){
         int temp = x;
