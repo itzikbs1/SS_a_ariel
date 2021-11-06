@@ -3,48 +3,53 @@
 #include "NumClass.h"
 
 int main(){
-
-   int num1,num2;
-     //printf("Please enter 2 numbers: ");
-     scanf(" %d %d",&num1 , &num2);
-         
-        if (num2 < num1){
-        int temp= num2;
-        num2 = num1;
-        num1 = temp;
-    }
-    printf("The Armstrong numbers are:");
-     for(int i=num1;i<=num2;i++){
-         int ans=isArmstrong(i);
-         if(ans==1)
-         printf(" %d",i);
-     }
-
-
-      printf("\n");
-      printf("The Palindromes are:");
-     for(int i=num1;i<=num2;i++){
-         int ans=isPalindrome(i);
-         if(ans==1)
-         printf(" %d",i);
-     }
-
-     printf("\n");
-     printf("The Prime numbers are:");
-     for(int i=num1; i<=num2; i++){
-         int ans=isPrime(i);
-         if(ans==1) {
-             printf(" %d",i);
-         }
-     }
+    int x,y;
+    // printf("Enter the first number: ");
+    scanf(" %d", &x);
+    // printf("Enter the second number: ");
+    // scanf(" %d", &y);
     
-      printf("\n");
-      printf("The Strong numbers are:");
-     for(int i=num1; i<=num2; i++){
-         int ans=isStrong(i);
-         if(ans==1)
-         printf(" %d",i);
-     }
-     printf("\n");
-     return 0;     
- }
+    if(x > y){
+        int temp = x;
+        y = x;
+        x = temp;
+    }
+
+    printf("The Armstrong numbers are:");
+     for (int i = x; i <= y; i++)
+    {
+        if (isArmstrong(i))
+        {
+            printf(" %d",i);
+         }
+    }
+        printf("\n");
+        printf("The Palindromes are:");
+     for (int i = x; i <= y; i++)
+    {
+        if (isPalindrome(i))
+        {
+            printf(" %d",i);
+         } 
+    }
+        printf("\n");
+        printf ("The Prime numbers are:");
+    for (int i = x; i <= y; i++)
+    {
+        if (isPrime(i))
+        {
+            printf(" %d",i);
+         }
+    }
+        printf("\n");
+        printf("The Strong numbers are:");
+     for (int i = x; i <= y; i++)
+    {
+        if (isStrong(i))
+        {
+            printf(" %d",i);
+         }
+    }
+        printf("\n");
+        return 0;
+}
