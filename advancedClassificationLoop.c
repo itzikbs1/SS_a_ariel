@@ -23,7 +23,7 @@ int isArmstrong(int x) {
     }
     if (sum == x)
         return 1;
-return 0;
+    return 0;
 }
 
 
