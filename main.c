@@ -4,10 +4,10 @@
 
 int main(){
     int x,y;
-    printf(" Enter the first number: ");
-    scanf("%d", &x);
-    printf("Enter the second number: ");
-    scanf("%d", &y);
+    // printf("Enter the first number: ");
+    scanf(" %d", &x);
+    // printf("Enter the second number: ");
+    scanf(" %d", &y);
     
     if(x > y){
         int temp = x;
@@ -20,7 +20,7 @@ int main(){
     {
         if (isArmstrong(i))
         {
-            printf("%d",i);
+            printf(" %d",i);
          }
     }
         printf("\n");
@@ -29,7 +29,7 @@ int main(){
     {
         if (isPalindrome(i))
         {
-            printf("%d",i);
+            printf(" %d",i);
          } 
     }
         printf("\n");
@@ -38,7 +38,7 @@ int main(){
     {
         if (isPrime(i))
         {
-            printf("%d",i);
+            printf(" %d",i);
          }
     }
         printf("\n");
@@ -47,7 +47,7 @@ int main(){
     {
         if (isStrong(i))
         {
-            printf("%d",i);
+            printf(" %d",i);
          }
     }
         printf("\n");
