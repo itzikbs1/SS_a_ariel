@@ -33,7 +33,7 @@ int isArmstrong(int x){
 }
 
 int checkPal(int x){
-    int numOfDigits = length_of_the_number(x);
+    int numOfDigits = (int)log10(x);
     if(x == 0){
     return 0;
     }
