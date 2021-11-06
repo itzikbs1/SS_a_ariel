@@ -17,7 +17,7 @@ int power(int x, int y){
 }
 
 int isArmstrong(int x){
-     int digits = length_of_the_number(x)
+     int digits = length_of_the_number(x);
         int sum = 0;
         int temp = x;
         int count = 0;
