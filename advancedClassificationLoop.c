@@ -15,7 +15,7 @@ int isArmstrong(int x) {
     int count;
     int temp=x;
     int sum=0;
-    int len = log10(x)+1;
+    int len = length_of_the_number(x);
     while (temp > 0){
         count = temp%10;
         sum += pow(count, len);
