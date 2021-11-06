@@ -8,6 +8,12 @@ int main(){
     scanf("%d", &x);
     printf("Enter the second number: ");
     scanf("%d", &y);
+    
+    if(x > y){
+        int temp = x;
+        y = x;
+        x = temp;
+    }
 
     printf("The Armstrong numbers are:");
      for (int i = x; i <= y; i++)
@@ -44,6 +50,7 @@ int main(){
             printf("%d",i);
          }
     }
+        printf("\n");
         printf("\n");
         return 0;
 }
