@@ -9,7 +9,7 @@ int length_of_the_number(int x){
     }
     return count;
 }
-int power(int x, unsigned int y){
+int power(int x, int y){
     if (y == 0){
         return 1;
     }
