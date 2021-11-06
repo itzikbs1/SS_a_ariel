@@ -1,8 +1,8 @@
 #include <stdio.h>
-#include "NumClass.h"
 #include <math.h>
+#include "NumClass.h"
 
-void main(){
+int main(){
     int x,y;
     printf(" Enter the first number: ");
     // printf("\n");
@@ -10,30 +10,30 @@ void main(){
     printf("Enter the second number: ");
     scanf("%d", &y);
 
-        printf("The Armstrong numbers are:");
+    printf("The Armstrong numbers are:");
      for (int i = x; i <= y; i++)
     {
         if (isArmstrong(i))
         {
-            printf(" %d",i);
+            printf("%d",i);
          }
     }
         printf("\n");
-        printf("The Palindrome numbers are:");
+        printf("The Palindromes are:");
      for (int i = x; i <= y; i++)
     {
         if (isPalindrome(i))
         {
-            printf(" %d",i);
+            printf("%d",i);
          } 
     }
         printf("\n");
-        printf ("the Prime numbers are: ");
+        printf ("The Prime numbers are:");
     for (int i = x; i <= y; i++)
     {
         if (isPrime(i))
         {
-            printf(" %d",i);
+            printf("%d",i);
          }
     }
         printf("\n");
@@ -42,8 +42,9 @@ void main(){
     {
         if (isStrong(i))
         {
-            printf(" %d",i);
+            printf("%d",i);
          }
     }
         printf("\n");
+        return 0;
 }
