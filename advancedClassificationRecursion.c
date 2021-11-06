@@ -1,7 +1,5 @@
 #include <stdio.h>
 #include <math.h>
-#include "NumClass.h"
-
 
 int checkArm(int x){
     int numOfDigits = (int)log10(x);
